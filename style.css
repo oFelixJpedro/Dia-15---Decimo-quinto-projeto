@@ -1,0 +1,45 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: rotateX(-20deg) rotateY(50deg);
+  transform-style: preserve-3d;
+}
+
+div {
+  height: 10rem;
+  width: 10rem;
+
+  position: absolute;
+
+  margin: 1rem;
+
+  &.cima {
+    background-color: red;
+    transform: rotateX(90deg) translateZ(5rem);
+  }
+
+  &.lado {
+    background-color: lime;
+    transform: rotateY(90deg) translateZ(-5rem);
+  }
+  &.meio {
+    background-color: skyblue;
+    transform: translateZ(5rem);
+  }
+}
